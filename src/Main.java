@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Car[] cars={new BMW(),new Mercedes()};
-        driveAllCars(cars);  //polimorfizmin ustunlikleri
+
+        BMW b = new BMW();
+        System.out.println(b.a);
+
+        Car c = b;
+        System.out.println(c.a);
+
     }
 
-    public static void driveAllCars(Car[] cars){
-        for (int i = 0; i < cars.length; i++) {
-            Car c =cars[i];
-            c.drive();
-        }
-    }
+
 }
