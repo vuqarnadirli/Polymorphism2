@@ -2,10 +2,10 @@ public class Main {
     public static void main(String[] args) {
 
         BMW b = new BMW();
-        System.out.println(b.a);
+        b.drive();
 
         Car c = b;
-        System.out.println(c.a);
+        c.drive();
 
     }
 
